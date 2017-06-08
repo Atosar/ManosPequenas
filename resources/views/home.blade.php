@@ -160,7 +160,16 @@
 				</div>
 			
 				<div class="contact-form">
-					{!! Form::open(['route' => 'messages.store', 'method' => 'POST']) !!}
+					{!! Form::open(['route' => 'messages.store', 'name' => 'messageForm', 'onsubmit' => "return validateForm()", 'method' => 'POST']) !!}
+						
+
+						<div class="error-form">
+							<div class="alert alert-danger alert-dismissable fade in">
+								<button type="button" onclick="hideForm()" class="close"  aria-hidden="true">&times;</button>
+								<div id="error-content"></div>
+							</div>
+						</div>
+
 						<div class="contact-input">
 							{!! Form::text('name', null, ['class' => 'form-control', 'placeholder' => 'Nombre']) !!}
 						</div>
@@ -191,7 +200,8 @@
 
 @section('js')
 <script type="text/javascript">
-// When the user scrolls down 20px from the top of the document, show the button
+// Scroll top button
+// When the user scrolls down 40px from the top of the document, show the button
 window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
@@ -207,9 +217,9 @@ function topFunction() {
     document.body.scrollTop = 0;
     document.documentElement.scrollTop = 0;
 }
-</script>
 
-<script type="text/javascript">
+
+// Scroll
 $(document).ready(function() {
   // Add smooth scrolling on all links inside the navbar
   $("a").on('click', function(event) {
@@ -233,9 +243,31 @@ $(document).ready(function() {
     }  // End if
   });
 });
-</script>
 
-<script type="text/javascript">
+
+// Validate form
+function validateForm() {
+  var name = document.forms["messageForm"]["name"].value;
+  var email = document.forms["messageForm"]["email"].value;
+  var content = document.forms["messageForm"]["content"].value;
+  
+  if (name == "" || email == "" || content == "") {
+    document.getElementById("error-content").innerHTML = 'Debes completar todos los campos.';
+	}
+  
+  $(".alert").hide().slideDown();
+
+  return false;  
+}
+
+function hideForm() {
+	$(".alert").show().slideUp();
+  
+	return false;
+}
+
+
+// Google map
 function initMap() {
   var uluru = {lat: -34.887469, lng: -56.1886877};
   var map = new google.maps.Map(document.getElementById('map'), {

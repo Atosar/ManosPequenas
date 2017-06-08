@@ -5,6 +5,10 @@ body {
   position: relative;
 }
 
+.alert{
+  display:none;
+}
+
 #topBtn {
   display: none;
   position: fixed;
@@ -197,8 +201,12 @@ body {
 .contact-form {
 	padding: 20px 0 20px 0;
 }
+.error-form {
+	height: 65px;
+}
+
 .contact-input {
-	padding: 20px 20px 20px 0;
+	padding: 0 20px 20px 0;
 	float: left;
 }
 .contact-message {
@@ -208,7 +216,7 @@ body {
 	resize: vertical;
 }
 .contact-submit {
- 	margin-top: 15px;
+ 	margin-top: 5px;
 }
 .contact-submit > input {
   padding: 5px;
