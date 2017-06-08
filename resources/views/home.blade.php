@@ -253,11 +253,28 @@ function validateForm() {
   
   if (name == "" || email == "" || content == "") {
     document.getElementById("error-content").innerHTML = 'Debes completar todos los campos.';
-	}
+	
+  	$(".alert").hide().slideDown();
   
-  $(".alert").hide().slideDown();
+  	return false;
+	
+	} else if (!validateEmail(email)) { 
+		document.getElementById("error-content").innerHTML = 'Debes ingresar un email valido.';
+	
+  	$(".alert").hide().slideDown();
 
-  return false;  
+		return false;
+	
+	} else {
+		
+		return true;
+	} 
+}
+
+function validateEmail(email) {
+  var re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+  
+  return re.test(email);
 }
 
 function hideForm() {
