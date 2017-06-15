@@ -10,11 +10,13 @@
 			Agustin <b>Tosar</b>
 		</div>
 		<div class="presentation-description">
-			La programacion esta en cualquier lugar que podamos imaginar y si alli no estuviese tendriamos que seguir programando, hasta lograrlo.
+			<p>Desarrollador web y estudiante en ciencias de la computacion.</p>
 		</div>
+		<!--
 		<div class="presentation-contact">
 			<a href="#contact"> Contacto </a>
 		</div>
+		-->
 	</div>
 </div>
 
@@ -31,12 +33,9 @@
 					Descripcion
 				</div>
 				<div class="about-description">
-					<p>Me considero un persona autodidacta, la mayor parte de lo que se es por iniciativa propia.</p>
-
-					<p>El bachillerato tecnológico me dio conocimientos en sistemas operativos (comandos por terminal), bases de datos (MySQL), desarrollo web (PHP, HTML, CSS, JavaScript) y Programacion orientada a objetos.</p>
-
-					<p>Algunas de las tareas que realice en el trabajo fueron principalmente de backend, corrección de errores, generar informes y asesoramiento a merchants sobre APIs propias de la empresa.</p>
-					
+					<p>Naci y vivo en Montevideo, tengo 21 años y hace 4 que estudio informatica.</p>
+					<p>Me considero una persona autodidacta, me gusta aprender nuevos lenguajes, nuevos conceptos relacionados a la computacion y soy un poco fanatico de los microcontroladores.</p>
+					<p>Elegi esta carrera porque me apasiona programar y porque considero que es esencial para complementar con todo lo que se nos ocurra.</p>
 					<div class="about-cv">
 						<a href="/download"> Descargar CV </a>
 					</div>
@@ -57,12 +56,12 @@
 
 					JS
 					<div class="progress" style="height: 5px; background-color: #d9d9d9">
-					  <div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" six-sec-ease-in-out" style="width: 20%; background-color: #0d0d0d"></div>
+					  <div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" six-sec-ease-in-out" style="width: 40%; background-color: #0d0d0d"></div>
 					</div>
 
 					PHP
 					<div class="progress" style="height: 5px; background-color: #d9d9d9">
-					  <div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" six-sec-ease-in-out" style="width: 50%; background-color: #0d0d0d"></div>
+					  <div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" six-sec-ease-in-out" style="width: 60%; background-color: #0d0d0d"></div>
 					</div>
 				</div>
 			</div>
@@ -78,12 +77,23 @@
 				<div class="about-description">
 					<div class="about-chart-paragraph row">
 						<div class="col-md-4">
-							<p>2012 - 1015</p>
+							<p>2012 - 2015</p>
 							<p>ESI, Montevideo</p>
 						</div>
 						<div class="col-md-8">
 							<p><b>Bachillerato Tecnologico de Informatica</b></p>
-							<p>El bachillerato tecnológico me dio conocimientos en sistemas operativos (comandos por terminal), bases de datos (MySQL), desarrollo web (PHP, HTML, CSS, JavaScript) y Programacion orientada a objetos.</p>
+							<p>El bachillerato tecnológico ofrece conocimientos en sistemas operativos (comandos por terminal y seguridad), bases de datos (MySQL), desarrollo web (PHP, HTML, CSS, JavaScript) y POO.</p>
+						</div>
+					</div>
+
+					<div class="about-chart-paragraph row">
+						<div class="col-md-4">
+							<p>2017</p>
+							<a href="https://itunes.apple.com/us/course/this-is-cs50-2016/id1191487593" target="_blank">This is CS50 2016</a>
+						</div>
+						<div class="col-md-8">
+							<p><b>CS50</b></p>
+							<p>CS50 es un curso de la universidad de Harvard que se libera cada año luego de haber finalizado. Este curso da una introduccion a algoritmos, ingenieria de software y desarollo web entre otras cosas. Incluye lenguajes tales como C, Phyton, SQL, JavaScript, CSS y HTML.</p>
 						</div>
 					</div>
 
@@ -116,7 +126,7 @@
 						</div>
 						<div class="col-md-8">
 							<p><b>Web Developer</b></p>
-							<p>Algunas de las tareas que realice fueron principalmente de backend, corrección de errores, generar informes y asesoramiento a merchants sobre APIs propias de la empresa.</p>
+							<p>Las tareas realizadas fueron principalmente de backend, corrección de errores, generar reportes y asesorar a merchants sobre APIs propias de la empresa.</p>
 						</div>
 					</div>
 				</div>
@@ -131,9 +141,81 @@
 		Aprendiendo
 	</div>
 	<div class="learning-info">
-		<img src="{{asset('images/learning/html5.svg')}}">
-		<img src="{{asset('images/learning/css3.svg')}}">
-		<img src="{{asset('images/learning/javascript.svg')}}">
+		<img src="{{asset('images/learning/html5.svg')}}" data-toggle="modal" data-target="#html">
+
+		<!-- html Modal -->
+		<div class="modal fade" id="html" tabindex="-1" role="dialog">
+		  <div class="modal-dialog" role="document">
+		    <div class="modal-content">
+		      <div class="modal-header">
+		        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+		        <h4 class="modal-title">HTML</h4>
+		      </div>
+		      <div class="modal-body">
+	      		<div class="row">
+			      	<div class="col-md-4">
+			      		<img src="{{asset('images/pages/codecademy.svg')}}" style="width:140px; height:70px">
+			      	</div>
+			      	<div class="col-md-8">
+			      		<p><b>HTML & CSS</b></p>
+			      		<a href="https://www.codecademy.com/learn/web" target="_blank">https://www.codecademy.com/learn/web</a>
+			      	</div>
+	      		</div>
+		      </div>
+		    </div>
+		  </div>
+		</div>
+
+		<img src="{{asset('images/learning/css3.svg')}}" data-toggle="modal" data-target="#css">
+
+		<!-- css Modal -->
+		<div class="modal fade" id="css" tabindex="-1" role="dialog">
+		  <div class="modal-dialog" role="document">
+		    <div class="modal-content">
+		      <div class="modal-header">
+		        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+		        <h4 class="modal-title">CSS</h4>
+		      </div>
+		      <div class="modal-body">
+	      		<div class="row">
+			      	<div class="col-md-4">
+			      		<img src="{{asset('images/pages/codecademy.svg')}}" style="width:140px; height:70px">
+			      	</div>
+			      	<div class="col-md-8">
+			      		<p><b>HTML & CSS</b></p>
+			      		<a href="https://www.codecademy.com/learn/web" target="_blank">https://www.codecademy.com/learn/web</a>
+			      	</div>
+	      		</div>
+		      </div>
+		    </div>
+		  </div>
+		</div>
+
+		<img src="{{asset('images/learning/javascript.svg')}}" data-toggle="modal" data-target="#js">
+
+		<!-- js Modal -->
+		<div class="modal fade" id="js" tabindex="-1" role="dialog">
+		  <div class="modal-dialog" role="document">
+		    <div class="modal-content">
+		      <div class="modal-header">
+		        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+		        <h4 class="modal-title">JavaScript</h4>
+		      </div>
+		      <div class="modal-body">
+	      		<div class="row">
+			      	<div class="col-md-4">
+			      		<img src="{{asset('images/pages/codecademy.svg')}}" style="width:140px; height:70px">
+			      	</div>
+			      	<div class="col-md-8">
+			      		<p><b>JavaScript</b></p>
+			      		<a href="https://www.codecademy.com/learn/javascript" target="_blank">https://www.codecademy.com/learn/javascript</a>
+			      	</div>
+	      		</div>
+		      </div>
+		    </div>
+		  </div>
+		</div>
+
 		<img src="{{asset('images/learning/bootstrap.svg')}}">
 		<img src="{{asset('images/learning/php.svg')}}">
 		<img src="{{asset('images/learning/mysql.svg')}}">
@@ -156,7 +238,10 @@
 					<span class="glyphicon glyphicon-earphone"></span> +598 91 469 429
 				</div>
 				<div class="contact-description">
-					<img src="{{asset('images/social/linkedin.png')}}" class="contact-icon"> Agustin Tosar
+					<img src="{{asset('images/social/linkedin.png')}}"> 
+					<a href="https://uy.linkedin.com/in/agustin-tosar-494a16b9" target="_blank">
+						Agustin Tosar
+					</a>
 				</div>
 			
 				<div class="contact-form">
@@ -255,10 +340,12 @@ function validateForm() {
     document.getElementById("error-content").innerHTML = 'Debes completar todos los campos.';
 	
   	$(".alert").hide().slideDown();
-  
+  	
   	return false;
 	
-	} else if (!validateEmail(email)) { 
+	} 
+
+	if (!validateEmail(email)) { 
 		document.getElementById("error-content").innerHTML = 'Debes ingresar un email valido.';
 	
   	$(".alert").hide().slideDown();

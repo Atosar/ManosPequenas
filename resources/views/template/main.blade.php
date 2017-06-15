@@ -19,7 +19,7 @@
 		<!-- notifications -->
 	 	@include('flash::message')
 
-		@yield('content')
+		@yield('content')		
 	</section>
 		
 	<script src="{{ asset('plugins/jquery/js/jquery-3.1.1.js') }}"></script>
@@ -27,9 +27,8 @@
 
 	<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDvY6kfitlGIBhfiXpW6PuEuqHTQ4EE0-A&callback=initMap"></script>
 
-
 	<script>
-    $('#flash-overlay-modal').modal();
+  	$('#flash-overlay-modal').modal();
 	</script>
 	
 	@yield('js')

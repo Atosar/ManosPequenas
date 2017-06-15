@@ -5,10 +5,6 @@ body {
   position: relative;
 }
 
-.alert{
-  display:none;
-}
-
 #topBtn {
   display: none;
   position: fixed;
@@ -31,6 +27,9 @@ body {
   transition: opacity 250ms linear;
 }
 
+.alert{
+  display:none;
+}
 .section-title {
 	padding-bottom: 40px;
 	font-size: 18px;
@@ -76,7 +75,7 @@ body {
 .presentation-info {
 	padding: 0 40px 0 40px;
 	position: absolute;
-	top: 120px;
+	top: 180px;
 }
 .presentation-name {
 	font-size: 40px;
@@ -84,7 +83,7 @@ body {
 }
 .presentation-description {
 	margin-top: 20px;
-	font-size: 16px;
+	font-size: 20px;
 }
 .presentation-contact {
  	margin-top: 40px;
@@ -183,6 +182,7 @@ body {
 }
 .learning-info > img:hover {
 	filter: grayscale(0%);
+	cursor: pointer;
 }
 
 /* contact */
@@ -194,9 +194,12 @@ body {
 	margin-top: 10px;
 	font-size: 16px;
 }
-.contact-icon {
+.contact-description img {
 	width: 15px;
 	height: 15px;
+}
+.contact-description a:hover {
+	text-decoration: none;
 }
 .contact-form {
 	padding: 20px 0 20px 0;
@@ -204,7 +207,6 @@ body {
 .error-form {
 	height: 65px;
 }
-
 .contact-input {
 	padding: 0 20px 20px 0;
 	float: left;
