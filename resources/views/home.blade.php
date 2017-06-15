@@ -82,7 +82,7 @@
 						</div>
 						<div class="col-md-8">
 							<p><b>Bachillerato Tecnologico de Informatica</b></p>
-							<p>El bachillerato tecnológico ofrece conocimientos en sistemas operativos (comandos por terminal), bases de datos (MySQL), desarrollo web (PHP, HTML, CSS, JavaScript) y POO.</p>
+							<p>El bachillerato tecnológico ofrece conocimientos en sistemas operativos (comandos por terminal y seguridad), bases de datos (MySQL), desarrollo web (PHP, HTML, CSS, JavaScript) y POO.</p>
 						</div>
 					</div>
 
