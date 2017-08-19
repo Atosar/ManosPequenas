@@ -1,0 +1,70 @@
+* {
+	font-family: 'Josefin Sans', sans-serif;
+}
+body {
+  position: relative;
+}
+
+.section-title {
+	padding-bottom: 40px;
+	font-size: 18px;
+	font-weight: bold;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+/* Navegation */
+.logo {
+	max-height: 40px;
+	max-width: 40px;
+	left: 200px;
+	border-radius: 50%;
+}
+.main-pills {
+	padding: 0 15px 0 15px;
+  	list-style: none;
+	position: absolute; 
+	z-index: 1;
+}
+.main-pills > li {
+  	margin: 20px 20px;
+  	float: right;
+}
+.main-pills > li > a {
+	font-size: 16px;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	color: #4C2A0F;
+}
+.main-pills > li > a:hover {
+	text-decoration: none;
+	color: #2b1808;
+
+    -webkit-transition: color 250ms linear;
+    -ms-transition: color 250ms linear;
+    transition: color 250ms linear;
+}
+
+/* presentation */
+.presentation {
+	height: 500px;
+	background-image:url(/images/manos4.JPG);
+	background-size:cover;
+	background-position: center;
+	top: 0px;
+}
+.presentation-info {
+	padding: 0 40px 0 40px;
+	position: absolute;
+	top: 370px;
+	left: 37px;
+}
+.presentation-name {
+	font-size: 40px;
+	text-transform: uppercase;
+}
+.presentation-description {
+	margin-top: 20px;
+	font-size: 20px;
+}

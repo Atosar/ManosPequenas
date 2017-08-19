@@ -2,12 +2,14 @@
 <html land="es">
 <head>
 	<main charset="UTF=8">   
-	<title> Agustin Tosar </title>
+	<title> Manos Pequenas </title>
 
 	<link href="{{ asset('css/general.css')}}" rel="stylesheet">
 	<link href="{{ asset('plugins/bootstrap/css/bootstrap.css')}}" rel="stylesheet">
 
 	<link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+
+	<link rel="shortcut icon" href="{{ asset('images/favicon.ico')}}" type="image/x-icon">
 </head>
 
 <body>
@@ -25,12 +27,13 @@
 	<script src="{{ asset('plugins/jquery/js/jquery-3.1.1.js') }}"></script>
 	<script src="{{ asset('plugins/bootstrap/js/bootstrap.js') }}"></script>
 
-	<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDvY6kfitlGIBhfiXpW6PuEuqHTQ4EE0-A&callback=initMap"></script>
-
 	<script>
-  	$('#flash-overlay-modal').modal();
+  		$('#flash-overlay-modal').modal();
 	</script>
-	
+
+	<script type="text/javascript" src="{{ asset('plugins/instafeed/instafeed.min.js') }}"></script>
+
+  	<script async defer src="https://maps.googleapis.com/maps/api/js?key= AIzaSyDw3LCIyhjwpqT8EtIFVJYs705fIQG7Gjk&callback=initMap" type="text/javascript"></script>
 	@yield('js')
 </body>
 </html>

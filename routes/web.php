@@ -16,6 +16,4 @@ Route::get('/', [
 	'as' 	=> 'home.index'
 ]);
 
-Route::get('/download', 'HomeController@download');
-
 Route::resource('messages','MessagesController');

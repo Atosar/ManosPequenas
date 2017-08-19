@@ -9,6 +9,7 @@
   </head>
   <body>
     <div class="main">
+      <p>De: {!! $name !!} ({!! $email !!})</p>
       <p>{!! $content !!}</p>
     </div>
   </body>

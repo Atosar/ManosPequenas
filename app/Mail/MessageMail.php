@@ -21,8 +21,10 @@ class MessageMail extends Mailable
     public function build()
     {
       return $this->from($this->message->email, $this->message->name)
-        ->subject('Personal web message')
+        ->subject('Mensaje desde manospequenas.com')
         ->view('mail.message')
+        ->with(['name' => $this->message->name])
+        ->with(['email' => $this->message->email])
         ->with(['content' => $this->message->content]);
     }
 }

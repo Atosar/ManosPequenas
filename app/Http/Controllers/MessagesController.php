@@ -24,13 +24,12 @@ class MessagesController extends Controller
     public function store(Request $request)
     {
       $message = new Message($request->all());
-      $message->save();
 
       // Send email 
-      $mail = 'agustin.tosar@icloud.com';
+      $mail = 'manos.peque@gmail.com';
       Mail::to($mail)->send(new MessageMail($message));  
 
-      flash()->overlay('Mcuhas gracias por contactarte, te respondere cuanto antes.', 'Se ha enviado el mensaje correctamente!');
+      flash()->overlay('Mcuhas gracias por contactarte, te responderemos cuanto antes!', 'Se ha enviado el mensaje correctamente!');
 
       return redirect()->route('home.index');
     }
